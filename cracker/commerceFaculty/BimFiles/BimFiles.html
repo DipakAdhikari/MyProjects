@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>faculty</title>
+      <link href="tryko.js">
+      <link rel="stylesheet" href="BimFiles.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <nav class="sidebar" id="mySidebar">
+         <div class="text">
+            Cracker
+         </div>
+         <ul>
+            <li class="active"><a>Home</a></li>
+            <li>
+               <a href="#" class="feat-btn">Notes
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                    <li><a onclick="showPanel(0,'')">1st Sem</a></li>
+                    <li><a onclick="showPanel(1,'')">2nd Sem</a></li>
+                    <li><a onclick="showPanel(2,'')">3rd Sem</a></li>
+                    <li><a onclick="showPanel(3,'')">4th Sem</a></li>
+                    <li><a onclick="showPanel(4,'')">5th Sem</a></li>
+                    <li><a onclick="showPanel(5,'')">6th Sem</a></li>
+                    <li><a onclick="showPanel(6,'')">7th Sem</a></li>
+                    <li><a onclick="showPanel(7,'')">8th Sem</a></li>
+                    <li><a onclick="showpanel(8,'')"></a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Question+Solution
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                <li><a href="#">First</a></li>
+                <li><a href="#">Second</a></li>
+                <li><a href="#">Third</a></li>
+                <li><a href="#">Forth</a></li>
+                <li><a href="#">Fifth</a></li>
+                <li><a href="#">Sixth</a></li>
+                <li><a href="#">Seventh</a></li>
+                <li><a href="#">Eigth</a></li>
+               </ul>
+            </li>
+            <li><a onclick="showPanel(9,'')">Video</a></li>
+            <li><a onclick="showPanel(10,'')">References</a></li>
+            <li><a onclick="showPanel(11,'')">Notice</a></li>
+            <li><a onclick="showPanel(12,'')">Contact</a></li>
+         </ul>
+            <div class="content">
+              <div class="tabPanel">
+                <div class="subContainer">
+                    <div class="buttonsContainer">
+                        <button onclick="subPanel(0,'#000000')">Syllabus</button>
+                        <button onclick="subPanel(1,'#000000')">Digital Logic</button>
+                        <button onclick="subPanel(2,'#000000')">English</button>
+                        <button onclick="subPanel(3,'#000000')">CIS</button>
+                        <button onclick="subPanel(4,'#000000')">POM</button>
+                        <button onclick="subPanel(5,'#000000')">Math</button>
+                    </div>
+                    <div class="subPanel"><iframe src="http://www.fomecd.edu.np/upload/BIM%201st%20Semester%20Syllabus.pdf"></iframe></div>
+                    <div class="subPanel">
+                        <b id="di">Digital Logic Design</b>
+                        <b id="cl">Click on the topic for note</b>
+                       <div class="Digital">
+                        <div class="digi 0">
+                        <h4><a href="/Users/dipakadhikari/url.html#NumberSystem">Unit 1: Number Systems, Operations and Codes</a></h4>
+                       <a href="/Users/dipakadhikari/url.html#Decimal">a. Decimal, Binary, Octal, Hexadecimal Number Systems,</a> <br>
+                        b. Conversion from one number system to another<br>
+                        c. Complements of Binary Numbers<br>
+                        d. Addition and Subtraction of Binary Numbers<br>
+                        e. Digital Codes<br>
+                        f. Error Detection Codes<br>
+                        <h4><a href="#">Unit 2: Digital Design Fundamentals </a></h4>
+                        a. Digital and Analog Quantities<br>
+                        b. Binary Digits, Logic Operations, Logic Levels and Digital Waveforms<br>
+                        c. Introduction to the System Concept<br>
+                        d. Logic Gates (Basic Gates, Derived Gates, Universal Gates)<br>
+                        e. Boolean Algebra and Logic Simplification<br>
+                        f. Minimizing SOP and POS expression using K-Map (up to 4 variables only)
+                       <h4><a href="#"> Unit 3: Functions of Combinational Logic</a></h4>
+                        a. Adders and Subtractors<br>
+                        b. Parallel Binary Adders<br>
+                        c. Multiplexers and Demultiplexers<br>
+                        d. Encoders and Decoders<br>
+                        e. Seven segment decoder<br>
+                        f. Code Converters<br>
+                        
+                    </div>
+                        <div class="digi 1">
+                        <h4><a href="#">Unit 4: Latches and Flip- Flops</a></h4>
+                        a. Latches<br>
+                        b. Edge-Triggered Flip-Flops<br>
+                        c. Flip-Flop Operating Characteristics<br>
+                        d. Flip-Flop Application<br>
+                        <h4><a href="#">Unit 5: Counters</a></h4>
+                        a. Asynchronous Counters<br>
+                        b. Synchronous Counters<br>
+                        c. Up/Down Counters<br>
+                        d. Cascaded Counters<br>
+                        e. Counter Applications<br>
+                        <h4><a href="#">Unit 6: Shift Registers </a></h4>
+                        a. Basic Shift Register Operations<br>
+                        b. Shift Register Types<br>
+                        c. Bidirectional Shift Registers<br>
+                        d. Shift Register Counters<br></div>
+                        <div class="digi 2">
+                        <h4><a href="#">Unit 7: Sequential Machine Design</a></h4>
+                        a. State Diagrams and State Tables<br>
+                        b. Design of Synchronous Counters<br>
+                        c. Design of Sequence Recognizer(up to 5 bits)<br>
+                        d. Analysis of Synchronous Circuits<br>
+                        <h4><a href="#">Unit 8: Memories LH 1</a></h4>
+                        a. Basic Memory Operations<br>
+                        b. Types of memories<br>
+                        i. RAM and ROM (no circuit details)<br>
+                        <h4><a href="#">Unit 9: Programmable Logic Devices</a></h4> 
+                        a. Introduction to various programmable devices<br>
+                        i. PLA
+                        ii. PAL
+                        iii. CPLD
+                        iv. FPGA
+                    
+                       <h4><a href="https://www.w3schools.com/colors/colors_picker.asp"> Unit 10: Integrated Circuit Technologies </a></h4>
+                        a. Basic Operational Characteristics and Parameters<br>
+                        b. CMOS, TTL, ECL<br>
+                        c. Levels of Integration (SSI, MSI, LSI, VLSI, ULSI)<br>
+                    </div>
+                       </div> 
+                    </body>
+                    </html>
+                    </div>
+                    <div class="subPanel">   <b>English</b>
+                        <div class="englishS">
+                            <div  id="oneenglish"class="english 1">
+                      <h3><a href="#"> Unit 1:</a></h3>
+                    Orientation on varieties of English and Spoken and written English, Formal and Informal<br>
+                    English, Impersonal Style, Polite and Familiar language, Tactful and Tentative Literary, Rhetorical.<br>
+                    <h3><a href="#"> Unit 2</a></h3>
+                    Intonation: Stressed and Unstressed Syllables / words, Tone Unit, Falling Intonation, Rising and Fall-Rise<br>
+                    Intonation.
+                    <h3><a href="#"> Unit 3</a></h3>
+                    Concepts of Nouns – Countable / Mass, Group, Unit, Measure species, Abstraction, etc. (exercise work)
+                    Restrictive and Non-Restrictive meaning, Present Tense – State, Event, Habit, Progressive, Temporary
+                    habit. Past Tense and Future Tense. Time-when-adverb, Prepositional phrase, Noun phrase + ago,
+                    Adverbial Clause. Place – Adverb, Prepositional phrase, Noun Phrase + away, adverbial clause. Manner,
+                    Means Instrument, Role, Standard, Viewpoint, Conditional Sentences, Open and Hypothetical Conditions.
+                    <h3><a href="#"> Unit 4</a></h3>
+                    Different types of Questions – Positive, Standard, Tag, Negative, WH-word, Polite, Short, Echo. Reported
+                    speech, Denial and Affirmation, Agreement and Disagreement. Neutrality, Hypothetical clauses, Putative
+                    'should', Degree of likelihood.
+                    </div>
+                    <div class="english 2">
+                    <h3><a href="#"> Unit 5</a></h3>
+                    Interjections, Intensifying Adverbs, Negative Sentences, Exclamatory and Rhetorical Sentences.
+                    Emotions – Hope, Anticipation, Regret, Approval, Disapproval, Surprise, Concern and Volition.
+                    Permission and Obligation, Prohibition. Influencing People and Friendly Communication.
+                    <h3><a href="#"> Unit 6</a></h3>
+                    Linking signals, Participle and Verbless clauses, Substitution and Omission. Main and Subsidiary
+                    Information, Fronted Topic, Inversion, Cleft Sentences, Postponement.  
+                    <h3><a href="#"> Unit 7</a></h3>
+                    For essays and comprehension passages, the following passages have<br> been prescribed for practice.
+                    Essays and comprehension passages will be IT related.<br>
+                    § Computers threatens marriage brokers. - LH 2<br>
+                    § Computer virus hits Delhi varsity and Much Ado about nothing. - LH 2<br>
+                    § Computers of the future. - LH 2<br>
+                    § Employing computers. - LH 2<br>
+                    § Science fiction. - LH 2<br>
+                    § Computerization in India. - LH 2<br>
+                    § Bio-gas plant. - LH 2<br>
+                    § Mountaineering - LH 1<br>
+                    § Chernobyl - LH 1<br>
+                    § Who can you trust. - LH 1<br>
+                    § Trekking - LH 1<br>
+                    § Economic Impacts of Information Revolution. - LH 2<br></div>
+                    </div>
+                </div>
+                    <div class="subPanel">CIS</div>
+                    <div class="subPanel">PHP</div>
+                    <div class="subPanel">Business</div>
+                </div>
+                <script>
+                    var subButtons=document.querySelectorAll(".subContainer .buttonsContainer button");
+                var subPanels=document.querySelectorAll(".subContainer  .subPanel");
+                
+                function subPanel(panelIndex,colorCode) {
+                    subButtons.forEach(function(node){
+                        node.style.backgroundColor="";
+                        node.style.color="";
+                    });
+                    subButtons[panelIndex].style.backgroundColor=colorCode;
+                    subButtons[panelIndex].style.color="white";
+                    subPanels.forEach(function(node){
+                        node.style.display="none";
+                    });
+                    subPanels[panelIndex].style.display="block";
+                    subPanels[panelIndex].style.backgroundColor=colorCode;
+                }
+                subPanel(0,'#000000');
+                </script>
+                </div>
+              <div class="tabPanel"><ul class="tabs">
+                <li class="active" data-cont=".one">one</li>
+                <li data-cont=".two">two</li>
+                <li data-cont=".three">three</li>
+                <li data-cont=".four">four</li>
+                <li data-cont=".five">five</li>
+              </ul>
+              <div class="secondContent">
+                <div class="one">Content 1</div>
+                <div class="two">Content 2</div>
+                <div class="three">Content 3</div>
+                <div class="four">Content 4</div>
+                <div class="five">Content 5</div>
+              </div>
+              <script>
+                  let tabs = document.querySelectorAll(".tabs li");
+            let tabsArray = Array.from(tabs);
+            let divs = document.querySelectorAll(".secondContent > div");
+            let divsArray = Array.from(divs);
+            
+            // console.log(tabsArray);
+            
+            tabsArray.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArray.forEach((ele) => {
+                  ele.classList.remove("active");
+                });
+                e.currentTarget.classList.add("active");
+                divsArray.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel"><ul class="tabs1">
+                <li class="active1" data-cont=".one1">one</li>
+                <li data-cont=".two1">two</li>
+                <li data-cont=".three1">three</li>
+                <li data-cont=".four1">four</li>
+                <li data-cont=".five1">five</li>
+              </ul>
+              <div class="secondContent1">
+                <div class="one1">Content 1</div>
+                <div class="two1">Content 2</div>
+                <div class="three1">Content 3</div>
+                <div class="four1">Content 4</div>
+                <div class="five1">Content 5</div>
+              </div>
+              <script>
+                  let tabsi = document.querySelectorAll(".tabs1 li");
+            let tabsArrayi = Array.from(tabsi);
+            let divsi = document.querySelectorAll(".secondContent1 > div");
+            let divsArrayi= Array.from(divsi);
+            
+            // console.log(tabsArray);
+            
+            tabsArrayi.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArrayi.forEach((ele) => {
+                  ele.classList.remove("active1");
+                });
+                e.currentTarget.classList.add("active1");
+                divsArrayi.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel"><ul class="tabs2">
+                <li class="active2" data-cont=".one2">one</li>
+                <li data-cont=".two2">two</li>
+                <li data-cont=".three2">three</li>
+                <li data-cont=".four2">four</li>
+                <li data-cont=".five2">five</li>
+              </ul>
+              <div class="secondContent2">
+                <div class="one2">Content 1</div>
+                <div class="two2">Content 2</div>
+                <div class="three2">Content 3</div>
+                <div class="four2">Content 4</div>
+                <div class="five2">Content 5</div>
+              </div>
+              <script>
+                  let tabsa = document.querySelectorAll(".tabs2 li");
+            let tabsArraya = Array.from(tabsa);
+            let divsa = document.querySelectorAll(".secondContent2 > div");
+            let divsArraya= Array.from(divsa);
+            
+            // console.log(tabsArray);
+            
+            tabsArraya.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArraya.forEach((ele) => {
+                  ele.classList.remove("active2");
+                });
+                e.currentTarget.classList.add("active2");
+                divsArraya.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel"><ul class="tabs3">
+                <li class="active3" data-cont=".one3">one</li>
+                <li data-cont=".two3">two</li>
+                <li data-cont=".three3">three</li>
+                <li data-cont=".four3">four</li>
+                <li data-cont=".five3">five</li>
+              </ul>
+              <div class="secondContent3">
+                <div class="one3">Content 1</div>
+                <div class="two3">Content 2</div>
+                <div class="three3">Content 3</div>
+                <div class="four3">Content 4</div>
+                <div class="five3">Content 5</div>
+              </div>
+              <script>
+                  let tabsb = document.querySelectorAll(".tabs3 li");
+            let tabsArrayb = Array.from(tabsb);
+            let divsb = document.querySelectorAll(".secondContent3 > div");
+            let divsArrayb= Array.from(divsb);
+            
+            // console.log(tabsArray);
+            
+            tabsArrayb.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArrayb.forEach((ele) => {
+                  ele.classList.remove("active3");
+                });
+                e.currentTarget.classList.add("active3");
+                divsArrayb.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel"><ul class="tabs4">
+                <li class="active4" data-cont=".one4">one</li>
+                <li data-cont=".two4">two</li>
+                <li data-cont=".three4">three</li>
+                <li data-cont=".four4">four</li>
+                <li data-cont=".five4">five</li>
+              </ul>
+              <div class="secondContent4">
+                <div class="one4">Content 1</div>
+                <div class="two4">Content 2</div>
+                <div class="three4">Content 3</div>
+                <div class="four4">Content 4</div>
+                <div class="five4">Content 5</div>
+              </div>
+              <script>
+                  let tabsc = document.querySelectorAll(".tabs4 li");
+            let tabsArrayc = Array.from(tabsc);
+            let divsc = document.querySelectorAll(".secondContent4 > div");
+            let divsArrayc= Array.from(divsc);
+            
+            // console.log(tabsArray);
+            
+            tabsArrayc.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArrayc.forEach((ele) => {
+                  ele.classList.remove("active4");
+                });
+                e.currentTarget.classList.add("active4");
+                divsArrayc.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel"><ul class="tabs5">
+                <li class="active5" data-cont=".one5">one</li>
+                <li data-cont=".two5">two</li>
+                <li data-cont=".three5">three</li>
+                <li data-cont=".four5">four</li>
+                <li data-cont=".five5">five</li>
+              </ul>
+              <div class="secondContent5">
+                <div class="one5">Content 1</div>
+                <div class="two5">Content 2</div>
+                <div class="three5">Content 3</div>
+                <div class="four5">Content 4</div>
+                <div class="five5">Content 5</div>
+              </div>
+              <script>
+                  let tabsd = document.querySelectorAll(".tabs5 li");
+            let tabsArrayd = Array.from(tabsd);
+            let divsd = document.querySelectorAll(".secondContent5 > div");
+            let divsArrayd= Array.from(divsd);
+            
+            // console.log(tabsArray);
+            
+            tabsArrayd.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArrayd.forEach((ele) => {
+                  ele.classList.remove("active5");
+                });
+                e.currentTarget.classList.add("active5");
+                divsArrayd.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel"><ul class="tabs6">
+                <li class="active6" data-cont=".one6">one</li>
+                <li data-cont=".two6">two</li>
+                <li data-cont=".three6">three</li>
+                <li data-cont=".four6">four</li>
+                <li data-cont=".five6">five</li>
+              </ul>
+              <div class="secondContent6">
+                <div class="one6">Content 1</div>
+                <div class="two6">Content 2</div>
+                <div class="three6">Content 3</div>
+                <div class="four6">Content 4</div>
+                <div class="five6">Content 5</div>
+              </div>
+              <script>
+                  let tabse = document.querySelectorAll(".tabs6 li");
+            let tabsArraye = Array.from(tabse);
+            let divse = document.querySelectorAll(".secondContent6 > div");
+            let divsArraye= Array.from(divse);
+            
+            // console.log(tabsArray);
+            
+            tabsArraye.forEach((ele) => {
+              ele.addEventListener("click", function (e) {
+                // console.log(ele);
+                tabsArraye.forEach((ele) => {
+                  ele.classList.remove("active6");
+                });
+                e.currentTarget.classList.add("active6");
+                divsArraye.forEach((div) => {
+                  div.style.display = "none";
+                });
+                // console.log(e.currentTarget.dataset.cont);
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+              });
+            });
+              </script></div>
+              <div class="tabPanel">home content</div>
+          </div>
+      </nav>
+      
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+     
+<script>
+    var tabButtons=document.querySelectorAll(".sidebar .feat-show a");
+var tabPanels=document.querySelectorAll(".sidebar  .tabPanel");
+
+function showPanel(panelIndex,colorCode) {
+    tabButtons.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+    tabButtons[panelIndex].style.backgroundColor=colorCode;
+    tabButtons[panelIndex].style.color="white";
+    tabPanels.forEach(function(node){
+        node.style.display="none";
+    });
+    tabPanels[panelIndex].style.display="block";
+    tabPanels[panelIndex].style.backgroundColor=colorCode;
+}
+showPanel(8,'');
+</script>  
+   </body>
+</html>
